@@ -8,6 +8,7 @@ class Ball:
         self.radius = radius
         self.speed_x = speed_x
         self.speed_y = speed_y
+        
         self.player_score = 0
         self.cpu_score = 0
 
