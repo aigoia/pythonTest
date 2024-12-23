@@ -11,7 +11,7 @@ ball = Ball(screen_width // 2, screen_height // 2, 12, 7, 7)
 player = Paddle(screen_width - 35, screen_height // 2 - 60, 25, 120, 12)
 cpu = CpuPaddle(10, screen_height // 2 - 60, 25, 120, 6)
 
-def awake_game():
+def init_game():
     init_window(screen_width, screen_height, "Pong")
     set_target_fps(60)
 
@@ -42,7 +42,7 @@ def draw_game():
     end_drawing()
 
 def main():
-    awake_game()
+    init_game()
 
     while not window_should_close():
         update_game()

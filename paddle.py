@@ -1,4 +1,5 @@
 from pyray import *
+from raylib import KEY_DOWN, KEY_UP
 
 class Paddle:
     def __init__(self, x, y, width, height, speed):
