@@ -4,9 +4,6 @@ from paddle import Paddle
 from cpu_paddle import CpuPaddle
 from setting import *
 
-screen_width = 1280
-screen_height = 800
-
 ball = Ball(screen_width // 2, screen_height // 2, ball_size, ball_speed, ball_speed)
 player = Paddle(screen_width - paddle_width - paddle_magin, (screen_height - paddle_height) // 2, paddle_width, paddle_height, player_speed)
 cpu = CpuPaddle(paddle_magin, (screen_height - paddle_height) // 2, paddle_width, paddle_height, cpu_speed)

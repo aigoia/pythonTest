@@ -19,20 +19,20 @@ class Ball:
         self.check_out_of_bounds()
 
     def handle_wall_collision(self):
-        if self.y - self.radius <= 0 or self.y + self.radius >= 800:
+        if self.y - self.radius <= 0 or self.y + self.radius >= screen_height:
             self.speed_y *= -1
 
     def check_out_of_bounds(self):
         if self.x < 0:
             self.player_score += 1
             self.reset()
-        elif self.x > 1280:
+        elif self.x > screen_width:
             self.cpu_score += 1
             self.reset()
 
     def reset(self):
-        self.x = 1280 // 2
-        self.y = 800 // 2
+        self.x = screen_width // 2
+        self.y = screen_height // 2
         self.speed_x *= -1
 
     def draw(self): 

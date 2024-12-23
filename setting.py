@@ -14,3 +14,6 @@ ball_size = 12
 player_speed = 12
 cpu_speed = 6
 ball_speed = 7
+
+screen_width = 1280
+screen_height = 800
