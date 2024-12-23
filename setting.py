@@ -2,6 +2,8 @@ from pyray import *
 
 game_name = "Pong"
 frame = 60
+screen_width = 1280
+screen_height = 800
 
 Green = Color(38, 185, 154, 255)
 Yellow = Color(243, 213, 91, 255)
@@ -17,6 +19,3 @@ ball_size = 12
 player_speed = 12
 cpu_speed = 6
 ball_speed = 7
-
-screen_width = 1280
-screen_height = 800
