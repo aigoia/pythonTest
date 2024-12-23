@@ -1,5 +1,8 @@
 from pyray import *
 
+game_name = "Pong"
+frame = 60
+
 Green = Color(38, 185, 154, 255)
 Yellow = Color(243, 213, 91, 255)
 

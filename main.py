@@ -9,8 +9,8 @@ player = Paddle(screen_width - paddle_width - paddle_magin, (screen_height - pad
 cpu = CpuPaddle(paddle_magin, (screen_height - paddle_height) // 2, paddle_width, paddle_height, cpu_speed)
 
 def init_game():
-    init_window(screen_width, screen_height, "Pong")
-    set_target_fps(60)
+    init_window(screen_width, screen_height, game_name)
+    set_target_fps(frame)
 
 def update_game():
     ball.update()
