@@ -15,12 +15,14 @@ class Ball:
     def update(self):
         self.x += self.speed_x
         self.y += self.speed_y
+        self.handle_wall_collision()
+        self.check_out_of_bounds()
 
-        # Bounce off top and bottom walls
+    def handle_wall_collision(self):
         if self.y - self.radius <= 0 or self.y + self.radius >= 800:
             self.speed_y *= -1
 
-        # Reset if ball goes out of bounds
+    def check_out_of_bounds(self):
         if self.x < 0:
             self.player_score += 1
             self.reset()
@@ -33,5 +35,5 @@ class Ball:
         self.y = 800 // 2
         self.speed_x *= -1
 
-    def draw(self):
+    def draw(self): 
         draw_circle(self.x, self.y, self.radius, Yellow)

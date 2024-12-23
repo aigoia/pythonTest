@@ -7,9 +7,9 @@ from setting import *
 screen_width = 1280
 screen_height = 800
 
-ball = Ball(screen_width // 2, screen_height // 2, 12, 7, 7)
-player = Paddle(screen_width - 35, screen_height // 2 - 60, 25, 120, 12)
-cpu = CpuPaddle(10, screen_height // 2 - 60, 25, 120, 6)
+ball = Ball(screen_width // 2, screen_height // 2, ball_size, ball_speed, ball_speed)
+player = Paddle(screen_width - paddle_width - paddle_magin, (screen_height - paddle_height) // 2, paddle_width, paddle_height, player_speed)
+cpu = CpuPaddle(paddle_magin, (screen_height - paddle_height) // 2, paddle_width, paddle_height, cpu_speed)
 
 def init_game():
     init_window(screen_width, screen_height, "Pong")
@@ -36,8 +36,8 @@ def draw_game():
     player.draw()
     cpu.draw()
 
-    draw_text(str(ball.cpu_score), screen_width // 4 - 20, 20, 80, WHITE)
-    draw_text(str(ball.player_score), 3 * screen_width // 4 - 20, 20, 80, WHITE)
+    draw_text(str(ball.cpu_score), screen_width // 4 - score_magin, score_magin, scoreSize, WHITE)
+    draw_text(str(ball.player_score), 3 * screen_width // 4 - score_magin, score_magin, scoreSize, WHITE)
 
     end_drawing()
 
