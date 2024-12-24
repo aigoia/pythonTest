@@ -32,7 +32,10 @@ class Ball:
             self.reset()
 
     def reset(self):
-        positions_y = [screen_height * 1 // 4, screen_height * 2 // 4, screen_height *  3 // 4]
+        positions_y = [screen_height * 2 // 4]
+        positions_y.insert(0, screen_height * 1 // 4)
+        positions_y.insert(0, screen_height * 3 // 4)
+        
         self.y = random.choice(positions_y)
 
         self.x = screen_width // 2
