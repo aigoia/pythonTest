@@ -47,4 +47,4 @@ class Ball:
         self.speed_x = self.speed_x * -1
 
     def draw(self):         
-        draw_circle(self.x, self.y, self.radius, Yellow)
+        draw_circle(self.x, self.y, self.radius, Gold)

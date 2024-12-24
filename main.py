@@ -26,15 +26,15 @@ def update_game():
 
 def draw_game():
     begin_drawing()
-    clear_background(Green)
-    draw_line(screen_width // 2, 0, screen_width // 2, screen_height, WHITE)
+    clear_background(Mint)
+    draw_line(screen_width // 2, 0, screen_width // 2, screen_height, Snow)
 
     ball.draw()
     player.draw()
     cpu.draw()
 
-    draw_text(str(ball.cpu_score), screen_width // 4 - score_margin, score_margin, scoreSize, WHITE)
-    draw_text(str(ball.player_score), 3 * screen_width // 4 - score_margin, score_margin, scoreSize, WHITE)
+    draw_text(str(ball.cpu_score), screen_width // 4 - score_margin, score_margin, scoreSize, Snow)
+    draw_text(str(ball.player_score), 3 * screen_width // 4 - score_margin, score_margin, scoreSize, Snow)
 
     end_drawing()
 

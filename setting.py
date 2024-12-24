@@ -7,8 +7,9 @@ screen_width = 1280
 screen_height = 800
 
 # Colors
-Green = Color(38, 185, 154, 255)
-Yellow = Color(243, 213, 91, 255)
+Mint = Color(72, 209, 204, 255)
+Gold = Color(255, 215, 0, 255)
+Snow = Color(255, 255, 240, 255)
 
 # Margins
 paddle_margin = 10
