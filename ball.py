@@ -1,3 +1,4 @@
+import random
 from pyray import *
 from setting import *
 
@@ -31,9 +32,11 @@ class Ball:
             self.reset()
 
     def reset(self):
+        positions_y = [screen_height * 1 // 4, screen_height * 2 // 4, screen_height *  3 // 4]
+        self.y = random.choice(positions_y)
+
         self.x = screen_width // 2
-        self.y = screen_height // 2
         self.speed_x *= -1
 
-    def draw(self): 
+    def draw(self):         
         draw_circle(self.x, self.y, self.radius, Yellow)
