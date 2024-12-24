@@ -28,7 +28,7 @@ class Ball:
             self.player_score = self.player_score + 1
             self.reset()
         elif self.x > screen_width:
-            self.cpu_score_score = self.cpu_score + 1
+            self.cpu_score = self.cpu_score + 1
             self.reset()
 
     def reset(self):
