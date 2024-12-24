@@ -35,12 +35,12 @@ class Ball:
             return False
 
     def reset(self):
-        print("Current score:", self.player_score, "vs",  self.cpu_score)
+        print("current score:", self.player_score, "vs",  self.cpu_score)
         
         positions_y = [2]
         positions_y.append(2 if self.player_score is self.cpu_score else 3)
         positions_y.append(2 if self.player_score is self.cpu_score else 1)
-        print(positions_y)
+        print("start positions:", positions_y)
         
         positions_y = [y * screen_height // 4 for y in positions_y]
         
