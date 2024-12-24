@@ -17,7 +17,6 @@ class Ball:
         self.x = self.x + self.speed_x
         self.y = self.y + self.speed_y
         self.handle_wall_collision()
-        # self.check_out_of_bounds()
 
     def handle_wall_collision(self):
         if self.y - self.radius <= 0 or self.y + self.radius >= screen_height:
