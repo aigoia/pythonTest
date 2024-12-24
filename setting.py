@@ -11,8 +11,8 @@ Green = Color(38, 185, 154, 255)
 Yellow = Color(243, 213, 91, 255)
 
 # Margins
-paddle_magin = 10
-score_magin = 20
+paddle_margin = 10
+score_margin = 20
 
 # Sizes
 scoreSize = 80
