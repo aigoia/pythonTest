@@ -13,7 +13,6 @@ class Ball:
         self.player_score = 0
         self.cpu_score = 0
         
-
     def update(self):
         self.x = self.x + self.speed_x
         self.y = self.y + self.speed_y
