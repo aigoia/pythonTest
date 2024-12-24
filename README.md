@@ -5,5 +5,5 @@
 
 <div class="code-box">
   <pre><code>python3 main.py</code></pre>
-  <button onclick="copyCode(this)">Copy</button>
+  <button onclick="copyCode(this)"></button>
 </div>
