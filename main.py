@@ -5,7 +5,7 @@ from paddle import Paddle
 from cpu_paddle import CpuPaddle
 from setting import *
 
-is_init = False
+init_done = False
 
 ball = Ball(screen_width // 2, screen_height // 2, ball_size, ball_speed, ball_speed)
 player = Paddle(screen_width - paddle_width - paddle_margin, (screen_height - paddle_height) // 2, paddle_width, paddle_height, player_speed)
@@ -16,8 +16,8 @@ async def init_game():
     set_target_fps(frame)
     
     await countdown()
-    global is_init
-    is_init = True
+    global init_done
+    init_done = True
     
 async def check_game():    
     if  ball.check_out_of_bounds():
@@ -30,7 +30,7 @@ async def countdown(start = init_count):
         clear_background(Snow)
         draw_text(f"{i}", get_screen_width() // 2 - score_margin, get_screen_height() // 2 - score_margin * 2, scoreSize, Mint)
         
-        if is_init:
+        if init_done:
             draw_text(str(ball.cpu_score), screen_width // 4 - score_margin, score_margin, scoreSize, Mint)
             draw_text(str(ball.player_score), 3 * screen_width // 4 - score_margin, score_margin, scoreSize, Mint)
         
