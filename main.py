@@ -39,6 +39,7 @@ def draw_game():
     end_drawing()
 
 def main():
+    print("Hello Pong!")
     init_game()
 
     while not window_should_close():
