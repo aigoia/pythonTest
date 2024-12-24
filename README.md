@@ -2,10 +2,9 @@
 [pyray](https://github.com/electronstudio/raylib-python-cffi)
 
 # Run
-`python3 main.py`
 
 <div class="code-box">
-  <pre><code>Your code here...</code></pre>
+  <pre><code>python3 main.py</code></pre>
   <button onclick="copyCode(this)">Copy</button>
 </div>
 
