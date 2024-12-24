@@ -19,10 +19,10 @@ def update_game():
 
     if check_collision_circle_rec((ball.x, ball.y), ball.radius,
                                   (player.x, player.y, player.width, player.height)):
-        ball.speed_x *= -1
+        ball.speed_x = ball.speed_x * -1
     if check_collision_circle_rec((ball.x, ball.y), ball.radius,
                                   (cpu.x, cpu.y, cpu.width, cpu.height)):
-        ball.speed_x *= -1
+        ball.speed_x = ball.speed_x * -1
 
 def draw_game():
     begin_drawing()
