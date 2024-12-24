@@ -12,6 +12,7 @@ class Ball:
         
         self.player_score = 0
         self.cpu_score = 0
+        
 
     def update(self):
         self.x = self.x + self.speed_x
@@ -25,18 +26,20 @@ class Ball:
             
     def check_out_of_bounds(self):
         if self.x < 0:
+            self.reset()
             self.player_score = self.player_score + 1
-            self.reset()
         elif self.x > screen_width:
-            self.cpu_score = self.cpu_score + 1
             self.reset()
+            self.cpu_score = self.cpu_score + 1
 
     def reset(self):
         print("Current score:", self.player_score, "vs",  self.cpu_score)
         
         positions_y = [2]
-        positions_y.insert(0, 1)
-        positions_y.append(3)
+        positions_y.append(2 if self.player_score is self.cpu_score else 3)
+        positions_y.append(2 if self.player_score is self.cpu_score else 1)
+        print(positions_y)
+        
         positions_y = [y * screen_height // 4 for y in positions_y]
         
         self.y = random.choice(positions_y)
