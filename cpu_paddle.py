@@ -8,3 +8,4 @@ class CpuPaddle(Paddle):
             self.y -= self.speed
         elif ball_y > self.y + self.height / 2 and self.y + self.height < screen_height:
             self.y += self.speed
+            
