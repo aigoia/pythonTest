@@ -32,6 +32,8 @@ class Ball:
             self.reset()
 
     def reset(self):
+        print("Current score:", self.player_score, "vs",  self.cpu_score)
+        
         positions_y = [2]
         positions_y.insert(0, 1)
         positions_y.append(3)
