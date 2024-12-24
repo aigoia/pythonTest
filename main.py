@@ -66,7 +66,7 @@ def draw_game():
     end_drawing()
     
 async def main():
-    print("Hello Pong!")
+    print("hello pong!")
     await init_game()
 
     while not window_should_close():
