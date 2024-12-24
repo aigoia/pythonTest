@@ -1,6 +1,5 @@
 import asyncio
 from pyray import *
-from raylib import KEY_SPACE
 from ball import Ball
 from paddle import Paddle
 from cpu_paddle import CpuPaddle
