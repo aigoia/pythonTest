@@ -24,7 +24,7 @@ async def check_game():
     if  ball.check_out_of_bounds():
         await countdown()
     
-async def countdown(start = 3):
+async def countdown(start = init_count):
     for i in range(start, 0, -1):
         begin_drawing()
         

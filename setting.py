@@ -5,7 +5,7 @@ game_name = "Pong"
 frame = 60
 screen_width = 1280
 screen_height = 800
-count_time = 0.6
+count_time = 0.3
 init_count = 3
 
 # Colors
