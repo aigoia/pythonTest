@@ -5,6 +5,8 @@ game_name = "Pong"
 frame = 60
 screen_width = 1280
 screen_height = 800
+count_time = 0.6
+init_count = 3
 
 # Colors
 Mint = Color(72, 209, 204, 255)

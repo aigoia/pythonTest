@@ -17,7 +17,7 @@ class Ball:
         self.x = self.x + self.speed_x
         self.y = self.y + self.speed_y
         self.handle_wall_collision()
-        self.check_out_of_bounds()
+        # self.check_out_of_bounds()
 
     def handle_wall_collision(self):
         if self.y - self.radius <= 0 or self.y + self.radius >= screen_height:
@@ -27,9 +27,13 @@ class Ball:
         if self.x < 0:
             self.reset()
             self.player_score = self.player_score + 1
+            return True
         elif self.x > screen_width:
             self.reset()
             self.cpu_score = self.cpu_score + 1
+            return True
+        else :
+            return False
 
     def reset(self):
         print("Current score:", self.player_score, "vs",  self.cpu_score)
@@ -45,6 +49,6 @@ class Ball:
 
         self.x = screen_width // 2
         self.speed_x = self.speed_x * -1
-
+    
     def draw(self):         
         draw_circle(self.x, self.y, self.radius, Gold)
