@@ -13,7 +13,7 @@ First make sure you have the latest pip installed:
   <button onclick="copyCode(this)"></button>
 </div>
 
-Then install
+Then install.
 
 <div class="code-box">
   <pre><code>python3 -m pip install setuptools</code></pre>
