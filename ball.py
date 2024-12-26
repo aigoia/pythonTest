@@ -40,6 +40,7 @@ class Ball:
         positions_y = [2]
         positions_y.append(2 if self.player_score is self.cpu_score else 3)
         positions_y.append(2 if self.player_score is self.cpu_score else 1)
+        positions_y = list(filter(lambda i: i !=2, positions_y)) + [2]
         print("start positions:", positions_y)
         
         positions_y = [y * screen_height // 4 for y in positions_y]
