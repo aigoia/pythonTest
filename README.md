@@ -6,6 +6,11 @@ Creating simple games with Raylib is the easiest way to study Python programming
 - [pyray](https://github.com/electronstudio/raylib-python-cffi)
 
 <div class="code-box">
+  <pre><code>sudo pip3 install raylib==5.5.0.0 --break-system-packages</code></pre>
+  <button onclick="copyCode(this)"></button>
+</div>
+
+<div class="code-box">
   <pre><code>git clone https://github.com/aigoia/pythonTest.git</code></pre>
   <button onclick="copyCode(this)"></button>
 </div>
