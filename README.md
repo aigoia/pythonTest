@@ -15,6 +15,11 @@ Creating simple games with Raylib is the easiest way to study Python programming
   <button onclick="copyCode(this)"></button>
 </div>
 
+<div class="code-box">
+  <pre><code>cd pythonTest</code></pre>
+  <button onclick="copyCode(this)"></button>
+</div>
+
 # Run
 
 <div class="code-box">
