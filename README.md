@@ -28,7 +28,7 @@ Then install.
 On most platforms it should install a binary wheel. If yours isn't available then pip will attempt to build from source, in which case you will need to have Raylib development libs installed, e.g. using homebrew, apt, etc.
 
 <div class="code-box">
-  <pre><code>pgit clone https://github.com/aigoia/pythonTest.git</code></pre>
+  <pre><code>git clone https://github.com/aigoia/pythonTest.git</code></pre>
   <button onclick="copyCode(this)"></button>
 </div>
 
