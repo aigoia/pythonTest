@@ -5,7 +5,8 @@ Creating simple games with Raylib is the easiest way to study Python programming
 # Library
 - [pyray](https://github.com/electronstudio/raylib-python-cffi)
 
-### Linux
+## Linux
+### Ubuntu
 It may conflict with the Anaconda package.
 
 <div class="code-box">
