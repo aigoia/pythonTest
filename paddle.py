@@ -17,5 +17,5 @@ class Paddle:
             self.y = self.y + self.speed
             
     def draw(self):
-        draw_rectangle(self.x, self.y, self.width, self.height, Snow)
+        draw_rectangle(self.x, self.y, self.width, self.height, SNOW)
         

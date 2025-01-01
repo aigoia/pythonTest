@@ -9,9 +9,9 @@ count_time = 0.3
 init_count = 3
 
 # Colors
-Mint = Color(72, 209, 204, 255)
-Gold = Color(255, 215, 0, 255)
-Snow = Color(255, 255, 240, 255)
+MINT = Color(72, 209, 204, 255)
+GOLD = Color(255, 215, 0, 255)
+SNOW = Color(255, 255, 240, 255)
 
 # Margins
 paddle_margin = 10

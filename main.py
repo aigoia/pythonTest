@@ -27,12 +27,12 @@ async def countdown(start = init_count):
     for i in range(start, 0, -1):
         begin_drawing()
         
-        clear_background(Snow)
-        draw_text(f"{i}", get_screen_width() // 2 - score_margin, get_screen_height() // 2 - score_margin * 2, scoreSize, Mint)
+        clear_background(SNOW)
+        draw_text(f"{i}", get_screen_width() // 2 - score_margin, get_screen_height() // 2 - score_margin * 2, scoreSize, MINT)
         
         if init_done:
-            draw_text(str(ball.cpu_score), screen_width // 4 - score_margin, score_margin, scoreSize, Mint)
-            draw_text(str(ball.player_score), 3 * screen_width // 4 - score_margin, score_margin, scoreSize, Mint)
+            draw_text(str(ball.cpu_score), screen_width // 4 - score_margin, score_margin, scoreSize, MINT)
+            draw_text(str(ball.player_score), 3 * screen_width // 4 - score_margin, score_margin, scoreSize, MINT)
         
         end_drawing()
         await asyncio.sleep(count_time) 
@@ -52,16 +52,16 @@ def update_game():
 
 def draw_game():
     begin_drawing()
-    clear_background(Mint)
-    draw_line(screen_width // 2, 0, screen_width // 2 + 1, screen_height, Snow)
-    draw_line(screen_width // 2, 0, screen_width // 2 - 1, screen_height, Snow)
+    clear_background(MINT)
+    draw_line(screen_width // 2, 0, screen_width // 2 + 1, screen_height, SNOW)
+    draw_line(screen_width // 2, 0, screen_width // 2 - 1, screen_height, SNOW)
 
     ball.draw()
     player.draw()
     cpu.draw()
 
-    draw_text(str(ball.cpu_score), screen_width // 4 - score_margin, score_margin, scoreSize, Snow)
-    draw_text(str(ball.player_score), 3 * screen_width // 4 - score_margin, score_margin, scoreSize, Snow)
+    draw_text(str(ball.cpu_score), screen_width // 4 - score_margin, score_margin, scoreSize, SNOW)
+    draw_text(str(ball.player_score), 3 * screen_width // 4 - score_margin, score_margin, scoreSize, SNOW)
 
     end_drawing()
     
